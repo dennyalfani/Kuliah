@@ -60,12 +60,12 @@ for tt = 0:0.05:max(t)
     pause (0.01)
     
     % capture the plot as an image
-%      frame = getframe(figure(1));
-%       im = frame2im(frame);
-%       [imind,cm] = rgb2ind(im,256);
-%       if tt == 0
-%           imwrite(imind,cm,filename,'gif', 'Loopcount',inf);
-%       else
-%           imwrite(imind,cm,filename,'gif','WriteMode','append');
-%       end
+      frame = getframe(figure(1));
+       im = frame2im(frame);
+       [imind,cm] = rgb2ind(im,256);
+       if tt == 0
+           imwrite(imind,cm,filename,'gif', 'Loopcount',inf);
+       else
+           imwrite(imind,cm,filename,'gif','WriteMode','append');
+       end
 end
